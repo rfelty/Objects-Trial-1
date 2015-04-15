@@ -13,6 +13,8 @@
 		A11EFC951ADCAD1F00021BD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11EFC941ADCAD1F00021BD6 /* Images.xcassets */; };
 		A11EFC981ADCAD1F00021BD6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11EFC961ADCAD1F00021BD6 /* LaunchScreen.xib */; };
 		A11EFCA41ADCAD1F00021BD6 /* Objects_TrialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11EFCA31ADCAD1F00021BD6 /* Objects_TrialsTests.swift */; };
+		A11EFCAE1ADCADA200021BD6 /* Bentley Ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A11EFCAD1ADCADA200021BD6 /* Bentley Ball.jpg */; };
+		A1DF1AB41ADEAA1600D03133 /* Bentley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1DF1AB31ADEAA1600D03133 /* Bentley.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		A11EFC9D1ADCAD1F00021BD6 /* Objects TrialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objects TrialsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11EFCA21ADCAD1F00021BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11EFCA31ADCAD1F00021BD6 /* Objects_TrialsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects_TrialsTests.swift; sourceTree = "<group>"; };
+		A11EFCAD1ADCADA200021BD6 /* Bentley Ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bentley Ball.jpg"; sourceTree = "<group>"; };
+		A1DF1AB31ADEAA1600D03133 /* Bentley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bentley.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		A11EFC8A1ADCAD1F00021BD6 /* Objects Trials */ = {
 			isa = PBXGroup;
 			children = (
+				A11EFCAD1ADCADA200021BD6 /* Bentley Ball.jpg */,
+				A1DF1AB31ADEAA1600D03133 /* Bentley.jpg */,
 				A11EFC8D1ADCAD1F00021BD6 /* AppDelegate.swift */,
 				A11EFC8F1ADCAD1F00021BD6 /* ViewController.swift */,
 				A11EFC911ADCAD1F00021BD6 /* Main.storyboard */,
@@ -192,7 +198,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1DF1AB41ADEAA1600D03133 /* Bentley.jpg in Resources */,
 				A11EFC931ADCAD1F00021BD6 /* Main.storyboard in Resources */,
+				A11EFCAE1ADCADA200021BD6 /* Bentley Ball.jpg in Resources */,
 				A11EFC981ADCAD1F00021BD6 /* LaunchScreen.xib in Resources */,
 				A11EFC951ADCAD1F00021BD6 /* Images.xcassets in Resources */,
 			);
@@ -409,6 +417,7 @@
 				A11EFCA91ADCAD1F00021BD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A11EFCAA1ADCAD1F00021BD6 /* Build configuration list for PBXNativeTarget "Objects TrialsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				A11EFCAC1ADCAD1F00021BD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
