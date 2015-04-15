@@ -46,12 +46,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="SOF-0k-l0K"/>
+                        <barButtonItem title="Select Date" id="HtX-0p-3Ec">
+                            <connections>
+                                <segue destination="Wa3-SL-BZr" kind="show" id="ukY-M4-AOO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="7N8-g9-2QA"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Focus" id="31a-k8-uzG"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4H-nU-oRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2248" y="288"/>
+            <point key="canvasLocation" x="1676" y="358"/>
+        </scene>
+        <!--Date-->
+        <scene sceneID="gVQ-M4-zbU">
+            <objects>
+                <viewController id="Wa3-SL-BZr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yrp-pS-L7b"/>
+                        <viewControllerLayoutGuide type="bottom" id="KOB-qh-viN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lbt-vs-LYq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="kGE-ww-5h9">
+                                <rect key="frame" x="0.0" y="115" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="450804403.53932601">
+                                    <!--2015-04-15 15:26:43 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="441802800">
+                                    <!--2015-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="473252400">
+                                    <!--2015-12-31 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52379728618421051" green="0.56766550164473684" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Date" id="I0X-dZ-pmA"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="arz-TT-mmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2534" y="494"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="80S-8x-bRd">
@@ -79,6 +122,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="1iw-GJ-Zhj" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="63d-4W-pfn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -93,11 +137,36 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0c-I1-mxU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="288"/>
+            <point key="canvasLocation" x="1676" y="-460"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="naS-iM-0rI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="1MI-Oh-Dlr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Vh-UO-eWa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="z23-lp-zl3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Wa3-SL-BZr" kind="relationship" relationship="rootViewController" id="90a-T6-mWX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nx-pb-lbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2108" y="-60"/>
         </scene>
     </scenes>
     <resources>
         <image name="Bentley Ball.jpg" width="1277" height="850"/>
         <image name="Bentley.jpg" width="1277" height="850"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ukY-M4-AOO"/>
+    </inferredMetricsTieBreakers>
 </document>
