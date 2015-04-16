@@ -17,11 +17,23 @@ class ViewController: UIViewController {
         dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
         var strDate = dateFormatter.stringFromDate(myDatePicker.date)
         self.selectedDate.text = strDate
+        
     }
+    
+    func saveChosenDate(date:NSDate){
+        NSUserDefaults.standardUserDefaults().setObject(date, forKey: "chosenDate")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    
     @IBOutlet weak var selectedDate: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        func loadChosenDate()-> NSDate{
+            return NSUserDefaults.standardUserDefaults().objectForKey("chosenDate") as! NSDate
+        }
+
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
