@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--Determination-->
+        <!--Schedule-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Objects_Trials" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,6 +19,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bentley Ball.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4bk-aU-1Xs">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date Returned" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXN-cF-GEG">
+                                <rect key="frame" x="72" y="410" width="243" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="REA-Ik-XJf">
+                                <rect key="frame" x="16" y="159" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="450900897.03758198">
+                                    <!--2015-04-16 18:14:57 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="o6j-eJ-vUB"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -31,8 +46,12 @@
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="S3b-hp-aU4"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Determination" id="yVa-ID-vrL"/>
+                    <navigationItem key="navigationItem" title="Schedule" id="yVa-ID-vrL"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="myDatePicker" destination="REA-Ik-XJf" id="PYA-19-bkh"/>
+                        <outlet property="selectedDate" destination="fXN-cF-GEG" id="Dd7-5Q-HZX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
