@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var myDatePicker: UIDatePicker!
+        @IBOutlet weak var selectedDate: UILabel!
     
     @IBAction func datePickerAction(sender: AnyObject) {
         var dateFormatter = NSDateFormatter()
@@ -20,28 +21,23 @@ class ViewController: UIViewController {
         
     }
     
-    func saveChosenDate(date:NSDate){
-        NSUserDefaults.standardUserDefaults().setObject(date, forKey: "chosenDate")
-        NSUserDefaults.standardUserDefaults().synchronize()
-    }
-    
-    @IBOutlet weak var selectedDate: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        func loadChosenDate()-> NSDate{
-            return NSUserDefaults.standardUserDefaults().objectForKey("chosenDate") as! NSDate
+        
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+        var strDate = dateFormatter.stringFromDate(NSDate())
+                self.selectedDate.text = strDate
         }
-
         
         // Do any additional setup after loading the view, typically from a nib.
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
+class SecondScreenViewController: UIViewController {
+    
+}

@@ -14,6 +14,7 @@
 		A11EFC981ADCAD1F00021BD6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11EFC961ADCAD1F00021BD6 /* LaunchScreen.xib */; };
 		A11EFCA41ADCAD1F00021BD6 /* Objects_TrialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11EFCA31ADCAD1F00021BD6 /* Objects_TrialsTests.swift */; };
 		A11EFCAE1ADCADA200021BD6 /* Bentley Ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A11EFCAD1ADCADA200021BD6 /* Bentley Ball.jpg */; };
+		A129C91B1AE07A3E0072A5B1 /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A129C91A1AE07A3E0072A5B1 /* ThirdScreenViewController.swift */; };
 		A1DF1AB41ADEAA1600D03133 /* Bentley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1DF1AB31ADEAA1600D03133 /* Bentley.jpg */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		A11EFCA21ADCAD1F00021BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11EFCA31ADCAD1F00021BD6 /* Objects_TrialsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects_TrialsTests.swift; sourceTree = "<group>"; };
 		A11EFCAD1ADCADA200021BD6 /* Bentley Ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bentley Ball.jpg"; sourceTree = "<group>"; };
+		A129C91A1AE07A3E0072A5B1 /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
 		A1DF1AB31ADEAA1600D03133 /* Bentley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bentley.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				A1DF1AB31ADEAA1600D03133 /* Bentley.jpg */,
 				A11EFC8D1ADCAD1F00021BD6 /* AppDelegate.swift */,
 				A11EFC8F1ADCAD1F00021BD6 /* ViewController.swift */,
+				A129C91A1AE07A3E0072A5B1 /* ThirdScreenViewController.swift */,
 				A11EFC911ADCAD1F00021BD6 /* Main.storyboard */,
 				A11EFC941ADCAD1F00021BD6 /* Images.xcassets */,
 				A11EFC961ADCAD1F00021BD6 /* LaunchScreen.xib */,
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A11EFC901ADCAD1F00021BD6 /* ViewController.swift in Sources */,
+				A129C91B1AE07A3E0072A5B1 /* ThirdScreenViewController.swift in Sources */,
 				A11EFC8E1ADCAD1F00021BD6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
