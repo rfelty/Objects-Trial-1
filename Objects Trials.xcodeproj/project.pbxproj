@@ -16,6 +16,7 @@
 		A11EFCAE1ADCADA200021BD6 /* Bentley Ball.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A11EFCAD1ADCADA200021BD6 /* Bentley Ball.jpg */; };
 		A129C91B1AE07A3E0072A5B1 /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A129C91A1AE07A3E0072A5B1 /* ThirdScreenViewController.swift */; };
 		A1DF1AB41ADEAA1600D03133 /* Bentley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1DF1AB31ADEAA1600D03133 /* Bentley.jpg */; };
+		A1E3A41D1AE09CE50041BE0C /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3A41C1AE09CE50041BE0C /* SecondScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		A11EFCAD1ADCADA200021BD6 /* Bentley Ball.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bentley Ball.jpg"; sourceTree = "<group>"; };
 		A129C91A1AE07A3E0072A5B1 /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
 		A1DF1AB31ADEAA1600D03133 /* Bentley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bentley.jpg; sourceTree = "<group>"; };
+		A1E3A41C1AE09CE50041BE0C /* SecondScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				A1DF1AB31ADEAA1600D03133 /* Bentley.jpg */,
 				A11EFC8D1ADCAD1F00021BD6 /* AppDelegate.swift */,
 				A11EFC8F1ADCAD1F00021BD6 /* ViewController.swift */,
+				A1E3A41C1AE09CE50041BE0C /* SecondScreenViewController.swift */,
 				A129C91A1AE07A3E0072A5B1 /* ThirdScreenViewController.swift */,
 				A11EFC911ADCAD1F00021BD6 /* Main.storyboard */,
 				A11EFC941ADCAD1F00021BD6 /* Images.xcassets */,
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E3A41D1AE09CE50041BE0C /* SecondScreenViewController.swift in Sources */,
 				A11EFC901ADCAD1F00021BD6 /* ViewController.swift in Sources */,
 				A129C91B1AE07A3E0072A5B1 /* ThirdScreenViewController.swift in Sources */,
 				A11EFC8E1ADCAD1F00021BD6 /* AppDelegate.swift in Sources */,

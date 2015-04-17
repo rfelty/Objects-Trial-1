@@ -106,7 +106,7 @@
                                 </date>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" red="0.52379728618421051" green="0.56766550164473684" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.055523768590358902" green="0.87263268266480698" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Date" id="I0X-dZ-pmA"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
