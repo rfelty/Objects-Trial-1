@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     @IBAction func datePickerAction(sender: AnyObject) {
         var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+        dateFormatter.dateFormat = "MMMM dd, yyyy HH:mm"
         var strDate = dateFormatter.stringFromDate(myDatePicker.date)
         self.selectedDate.text = strDate
         
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+        dateFormatter.dateFormat = "MMMM dd, yyyy HH:mm"
         var strDate = dateFormatter.stringFromDate(NSDate())
                 self.selectedDate.text = strDate
         }

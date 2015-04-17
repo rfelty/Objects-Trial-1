@@ -20,13 +20,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date Returned" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXN-cF-GEG">
-                                <rect key="frame" x="72" y="410" width="243" height="21"/>
+                                <rect key="frame" x="61" y="410" width="243" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="REA-Ik-XJf">
-                                <rect key="frame" x="16" y="159" width="320" height="162"/>
+                            <datePicker contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="REA-Ik-XJf">
+                                <rect key="frame" x="0.0" y="159" width="320" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="450900897.03758198">
                                     <!--2015-04-16 18:14:57 +0000-->
                                 </date>
@@ -104,12 +104,24 @@
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="473252400">
                                     <!--2015-12-31 11:00:00 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="datePickerAction:" destination="Wa3-SL-BZr" eventType="valueChanged" id="kJO-Qk-z4g"/>
+                                </connections>
                             </datePicker>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8j9-xL-HJv">
+                                <rect key="frame" x="5" y="342" width="306" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.055523768590358902" green="0.87263268266480698" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Date" id="I0X-dZ-pmA"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="myDatePicker2" destination="kGE-ww-5h9" id="fI2-ZM-GXl"/>
+                        <outlet property="selectedDate2" destination="8j9-xL-HJv" id="KaZ-9L-BzZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arz-TT-mmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
